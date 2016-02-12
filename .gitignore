@@ -2,3 +2,5 @@
 .tmp
 .bundle
 vendor/**/
+.tmp/
+modules/

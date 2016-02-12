@@ -1,6 +1,10 @@
 class base {
   hiera_include('classes')
 
+  package{'unzip':
+    ensure => present,
+  }->
+
   sudo::conf { 'vagrant':
     priority => 30,
     content  => 'vagrant ALL=(ALL) NOPASSWD:ALL',
